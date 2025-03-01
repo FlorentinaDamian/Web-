@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0px 2rem;
+  border: 1px solid;
+}
+
+.main-heading {
+  font-size: 4rem;
+  margin: 2rem 0rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+/* form section */
+.form-class {
+  margin: 2rem 0px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-field {
+  margin: 1rem 0px 0.6rem;
+}
+
+.field-head {
+  font-size: 22px;
+  
+}
+
+.input-div {
+  margin-bottom: 1rem;
+}
+
+.field-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.field-inputs label{
+  color: rgba(0, 0, 106, 1);
+}
+
+.form-control-input {
+  font-size: 1.5rem;
+  padding: 0.4rem 0px;
+  text-indent: 0.5rem;
+  border: none;
+  outline: 1px solid #999;
+  border-radius: 7px;
+  width: 100%;
+  color: rgba(0, 0, 106, 1);
+}
+
+.radio {
+  outline: none;
+}
+
+.form-control-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.help-text {
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  padding: 0.1rem;
+}
+
+button {
+  font-size: 2rem;
+  margin: 0px auto;
+  display: block;
+  color: wite;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid white;
+  background-color: #023de3;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px #0000;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+/* form section ends */
+footer {
+  background-color: #131313;
+}
+
+footer > span {
+  font-size: 15px;
+  color: #555;
+}
+
+.footer-nav {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-nav li {
+  display: inline;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.footer-nav a {
+  color: #79797B;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-nav a:hover {
+  color: #fbfbfb;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: @screen-sm-min) {
+  .intro-text {
+    padding-top: 50px;
+    color: red;
+    font-size: 14px;
+  }
+}

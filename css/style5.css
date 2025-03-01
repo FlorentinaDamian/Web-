@@ -1,0 +1,180 @@
+*{
+margin:0;
+padding:0;
+font-family:sans-serif;
+box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  text-align: center;
+  height:130px;
+}
+body {
+  background-image: url("../imagini/f1.jpg");
+  background-size: 100% 100%;
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 15%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+    border: 3px solid grey;
+	 padding: 30px;
+	 margin:30px;
+}
+
+.column.middle p{
+	color: rgba(0, 0, 106, 1);
+	font: 22px/49px Georgia, "Times New Roman", Times, serif;
+	font-size:130%;
+	text-align:justify;
+	text-indent: 50px;
+	  margin:20px;
+}
+.column.middle h1{
+	color: rgba(0, 0, 106, 1);
+	font: italic 22px/49px Georgia, "Times New Roman", Times, serif;
+	font-size:300%;
+	text-align:center;
+	text-indent: 50px;
+	 margin:20px;
+	  padding: 20px;
+}
+.column.middle h3{
+	color: rgba(0, 0, 106, 1);
+	font: 22px Georgia, "Times New Roman", Times, serif;
+}
+.column.middle h2{
+	color: rgba(0, 0, 106, 1);
+	font: italic 22px Georgia, "Times New Roman", Times, serif;
+	font-size:200%;
+		text-indent: 90px;
+}
+.column.middle ul {
+	padding: 20px;
+	 margin-left: 35px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar
+{
+	position: fixed;
+	width:85%;
+	margin:auto;
+	padding:35px 0;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.navbar ul li
+{
+	list-style:none;
+	display:inline-block;
+	margin:0 20px;
+	position:relative;
+	
+}
+.navbar ul li a
+{
+	text-decoration:none;
+	color:#fff;
+	text-transform:uppercase;
+}
+.navbar ul li::after
+{
+	content:'';
+	height:3px;
+	width:0;
+	background:#009688;
+	position:absolute;
+	left:0;
+	bottom:-10px;
+	transition:0.5s;
+}
+.navbar ul li:hover::after
+{
+	width:100%;
+}
+.content
+{
+	width:100%;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	color:#fff;
+	
+}
+
+.content p
+{
+	margin:70px auto;
+	font-weight:100;
+	line-height:25px;
+}
+.content h1
+{
+	font-size:70px;
+	margin-top:80px;
+}
+
+footer {
+  background-color: #131313;
+}
+
+footer > span {
+  font-size: 15px;
+  color: #555;
+}
+
+.footer-nav {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-nav li {
+  display: inline;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.footer-nav a {
+  color: #79797B;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-nav a:hover {
+  color: #fbfbfb;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: @screen-sm-min) {
+  .intro-text {
+    padding-top: 50px;
+    color: red;
+    font-size: 14px;
+  }
+}
